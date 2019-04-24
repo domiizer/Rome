@@ -1,0 +1,19 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.asus.rome">
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application android:label="@string/app_name" >
+        <activity android:name="com.example.asus.rome.dome.dome"
+            android:icon="@mipmap/ic_launcher"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="sensorLandscape"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
